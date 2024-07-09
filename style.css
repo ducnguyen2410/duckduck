@@ -10,6 +10,7 @@ body {
 }
 
 .header {
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -168,12 +169,12 @@ a {
   flex-direction: column;
 }
 
-.intro div span:nth-child(1) {
+.intro div > span:nth-child(1) {
   font-size: 3em;
   font-weight: 600;
 }
 
-.intro div span:nth-child(2) {
+.intro div > span:nth-child(2) {
   font-size: 1.2em;
   margin-top: 40px;
   font-weight: 500;
@@ -182,6 +183,12 @@ a {
 .img_change {
   filter: brightness(100%);
   animation: shinyEffect 1s infinite alternate ease-in-out;
+}
+
+.redred {
+  color: #D63230;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @keyframes shinyEffect {
@@ -207,6 +214,7 @@ a {
   }
 
   .header {
+    height: fit-content;
     gap: 20px !important;
     width: 100%;
     display: flex;
